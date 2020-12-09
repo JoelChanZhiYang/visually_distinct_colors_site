@@ -45,6 +45,12 @@ app = Flask(__name__)
 def index():
     return "<h1>Hello World</h1>"
 
+@app.route("/json")
+def respond():
+    reponse = {}
+    reponse["text"] = "Hello World!"
+    return jsonify()
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
