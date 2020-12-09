@@ -49,7 +49,7 @@ def index():
 def respond():
     reponse = {}
     reponse["text"] = "Hello World!"
-    return jsonify()
+    return jsonify(response)
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
