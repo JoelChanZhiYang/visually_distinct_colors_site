@@ -47,8 +47,8 @@ def index():
 
 @app.route("/json")
 def respond():
-    reponse = {}
-    reponse["text"] = "Hello World!"
+    response = {}
+    response["text"] = "Hello World!"
     return jsonify(response)
 
 if __name__ == '__main__':
